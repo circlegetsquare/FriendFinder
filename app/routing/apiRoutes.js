@@ -28,11 +28,9 @@ app.post("/api/new", function(req, res) {
        // res.json(newreservation);
     }
 });
-//return the reservations array
-app.get("/api/reservations", function(req, res){
+
+//return the friends array
+app.get("/api/friends", function(req, res){
   res.json(reservations);
 });
-//return the waitlist array
-app.get("/api/waitlist", function(req, res){
-  res.json(waitlist);
-});
+
