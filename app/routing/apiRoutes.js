@@ -1,21 +1,23 @@
 // API Routes
 // =============================================================
 
-var friends = require("../data/friends.js");
-
+var arrFriends = require("../data/friends.js");
 
 module.exports = function(app) {
+  
   //return the friends array
   app.get("/api/friends", function(req, res){
-    res.json(reservations);
+    res.json(arrFriends);
   });
 
   //adds incoming survey data
   app.post("/api/friends", function(req, res) {
     var newFriend = req.body;
-
-    console.log(newcharacter);
+    console.log(arrFriends);
+    newFriend.scores = newFriend.scores.map(Number);
     
-    friends.push(newFriend);
+    console.log(newFriend);
+    arrFriends.push(newFriend);
+    res.json(newFriend);   
   });
 };
