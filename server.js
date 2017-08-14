@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var port = process.env.PORT || 8080; //says use process.env.port if available, else use 3000
+var PORT = process.env.PORT || 8080; //says use process.env.port if available, else use 3000
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
