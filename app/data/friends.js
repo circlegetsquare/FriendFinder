@@ -1,17 +1,17 @@
 var arrFriends = [{
-  "name":"TestName",
+  "name":"Test Person",
   "photo":"https://i.vimeocdn.com/portrait/58832_300x300",
   "scores":[
       5,
-      1,
-      4,
-      4,
       5,
-      1,
-      2,
       5,
-      4,
-      1
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
     ]
 }];
 
